@@ -1,0 +1,108 @@
+/*esto no lo sabia lo aprendi buscando es un reset basico para proyectos pequeños no se recomienda en proyectos mas grandes*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+body{
+    background-color:#040404;
+    color: white;
+}
+header{
+    background-color: #1a1a1a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+header .logo h1{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: goldenrod;
+}
+.bienvenida {
+    text-align: center;
+    padding: 50px 20px;
+}
+.bienvenida h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: white;
+}
+.bienvenida p {
+    color: grey;
+    font-size: 1.1rem;
+}
+.carrusel {
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+}
+.carrusel h2 {
+    margin-bottom: 20px;
+    color: goldenrod;
+}
+.carrusel-contenedor-interno {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.carrusel-contenedor-interno img {
+    width: 1000px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.btn-control {
+    background-color: #1a1a1a;
+    color: #fff;
+    border: none;
+    padding: 12px 18px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.btn-control:hover {
+    background-color: goldenrod;
+    color: #1a1a1a;
+}
+footer {
+    background-color: #1a1a1a;
+    color:white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 120px;
+    height: 50px;
+    object-fit: contain;
+}
