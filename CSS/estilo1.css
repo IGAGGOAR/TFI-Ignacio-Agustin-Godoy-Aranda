@@ -6,7 +6,7 @@
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
 }
 body{
-    background-color:#040404;
+    background-color:black;
     color: white;
 }
 header{
@@ -49,15 +49,16 @@ header nav ul li a.active {
     color: grey;
     font-size: 1.1rem;
 }
+/*DISEÑO DEL CARRUSEL*/
 .carrusel {
     text-align: center;
     padding: 20px;
-    max-width: 600px;
+    max-width: 850px;
     margin: 0 auto 50px auto;
 }
 .carrusel h2 {
     margin-bottom: 20px;
-    color: goldenrod;
+    color: #d4d4d4;
 }
 .carrusel-contenedor-interno {
     display: flex;
@@ -66,11 +67,11 @@ header nav ul li a.active {
     gap: 20px;
 }
 .carrusel-contenedor-interno img {
-    width: 1000px;
-    height: 500px;
+    width: 100%;
+    height: 450px;
     object-fit: cover;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.642);/*en mi monitor no se nota tanto pero me gusta como queda*/
 }
 .btn-control {
     background-color: #1a1a1a;
@@ -87,6 +88,7 @@ header nav ul li a.active {
     background-color: goldenrod;
     color: #1a1a1a;
 }
+/*LITERALMENTE FOOTER*/
 footer {
     background-color: #1a1a1a;
     color:white;
@@ -95,6 +97,7 @@ footer {
     margin-top: 40px;
     font-size: 0.9rem;
 }
+/*ACOMODAR EWL LOGO*/
 .logo {
     display: flex;
     align-items: center;
@@ -105,4 +108,148 @@ footer {
     width: 120px;
     height: 50px;
     object-fit: contain;
+}
+/*ESTO ES DE LA PAGINA PRODUCTO*/
+.catalogo {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.catalogo h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.catalogo p {
+    color: grey;
+    margin-bottom: 30px;
+}
+
+.contenedor-productos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tarjeta-producto {
+    background-color: white;
+    border: 1px solid #d4d4d4;
+    border-radius: 8px;
+    padding: 20px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.642);/*lo mismo que el otro se nota poco pero me gusta como queda*/
+    transition: transform 0.3s;
+}
+/*me gusto mucho encontrar este efectito*/
+.tarjeta-producto:hover {
+    transform: translateY(-5px);
+}
+.tarjeta-producto img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.tarjeta-producto h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+.precio {
+    color: goldenrod;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.btn-comprar {
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-comprar:hover {
+    background-color: goldenrod;
+    color: #1a1a1a;
+}
+/*DISEÑO DEL FORMS*/
+.contacto-seccion {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: goldenrod;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(129, 129, 129, 0.644);
+    text-align: center;
+}
+
+.contacto-seccion h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+.contacto-seccion p {
+    color: black;
+    margin-bottom: 25px;
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.campo-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.campo-grupo label {
+    font-weight: 500;
+    color: rgb(43, 43, 43);
+}
+
+.campo-grupo input,
+.campo-grupo textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.campo-grupo input:focus,
+.campo-grupo textarea:focus {
+    border-color: goldenrod;
+}
+.btn-enviar {
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+
+.btn-enviar:hover {
+    background-color: #d4af37;
+    color: #1a1a1a;
 }
