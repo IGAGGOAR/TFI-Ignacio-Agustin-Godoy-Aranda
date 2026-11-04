@@ -1,4 +1,5 @@
-const imgCarrusel = [
+document.addEventListener("DOMContentLoaded", () =>{
+    const imgCarrusel = [
     "assets/anillo.jpg",
     "assets/aros.jpg",
     "assets/collar.jpg"
@@ -12,7 +13,7 @@ const btnSiguiente = document.getElementById("btnSiguiente");
 
 function actualizarImagen(){
     imgElemento.src = imgCarrusel[indiceActual];
-    imgElemento.alt = "Joya exhibida"+ (indiceActual + 1)+ "de Sol Naciente";
+    imgElemento.alt = "Joya exhibida "+ (indiceActual + 1)+ " de Sol Naciente";
 }
 
 function siguienteImagen(){
@@ -32,3 +33,6 @@ function anteriorImagen(){
 btnSiguiente.addEventListener("click",siguienteImagen);
 btnAnterior.addEventListener("click",anteriorImagen);
 actualizarImagen();
+
+
+});

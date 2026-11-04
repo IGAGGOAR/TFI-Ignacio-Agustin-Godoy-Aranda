@@ -83,7 +83,6 @@ header nav ul li a.active {
     border-radius: 50%;
     transition: background 0.3s;
 }
-
 .btn-control:hover {
     background-color: goldenrod;
     color: #1a1a1a;
@@ -103,7 +102,6 @@ footer {
     align-items: center;
     gap: 15px;
 }
-
 .logo img {
     width: 120px;
     height: 50px;
@@ -114,7 +112,6 @@ footer {
     padding: 40px 20px;
     text-align: center;
 }
-
 .catalogo h2 {
     font-size: 2rem;
     margin-bottom: 10px;
@@ -125,7 +122,6 @@ footer {
     color: grey;
     margin-bottom: 30px;
 }
-
 .contenedor-productos {
     display: flex;
     justify-content: center;
@@ -134,7 +130,6 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
 }
-
 .tarjeta-producto {
     background-color: white;
     border: 1px solid #d4d4d4;
@@ -168,7 +163,6 @@ footer {
     font-size: 1.1rem;
     margin-bottom: 15px;
 }
-
 .btn-comprar {
     background-color: #1a1a1a;
     color: white;
@@ -178,7 +172,6 @@ footer {
     cursor: pointer;
     transition: background 0.3s;
 }
-
 .btn-comprar:hover {
     background-color: goldenrod;
     color: #1a1a1a;
@@ -199,30 +192,25 @@ footer {
     margin-bottom: 10px;
     color: #1a1a1a;
 }
-
 .contacto-seccion p {
     color: black;
     margin-bottom: 25px;
 }
-
 .formulario-contacto {
     display: flex;
     flex-direction: column;
     gap: 20px;
     text-align: left;
-}
-
+} 
 .campo-grupo {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
-
 .campo-grupo label {
     font-weight: 500;
     color: rgb(43, 43, 43);
 }
-
 .campo-grupo input,
 .campo-grupo textarea {
     padding: 12px;
@@ -232,7 +220,6 @@ footer {
     outline: none;
     transition: border-color 0.3s;
 }
-
 .campo-grupo input:focus,
 .campo-grupo textarea:focus {
     border-color: goldenrod;
@@ -248,8 +235,70 @@ footer {
     transition: background 0.3s;
     font-weight: bold;
 }
-
 .btn-enviar:hover {
     background-color: #d4af37;
     color: #1a1a1a;
+}
+/*CSS DE VALIDACIONES Y ERRORES DE FORMS*/
+.error-msj{
+    color:#a33030;
+    font-size: 0.8rem;
+    margin-top: 4px;
+    font-weight: 500;
+    display: block;
+}
+.resumen-interno{ 
+    display: none;
+    margin-top: 25px;
+    padding: 20px;
+    border: 2px solid goldenrod;
+    border-radius: 8px;
+    text-align: left;
+    background-color: #1a1a1a;
+    color: white;
+}
+.resumen-interno h3{
+    color: goldenrod;
+    margin-bottom: 12px;
+    text-align: center;
+}
+.resumen-interno p {
+    color: #ccc;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.resumen-interno ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.resumen-interno li {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+.resumen-interno strong {
+    color: goldenrod; 
+} 
+@media (max-width: 768px){
+    header{
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+    header nav ul{
+        gap: 15px;
+    }
+    .carrusel-contenedor-interno{
+        height: 300px;
+    }
+    .contacto-seccion {
+        width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+    }
 }

@@ -25,32 +25,37 @@
             <h2>Contáctanos</h2>
             <p>¿Tenes alguna consulta especial o deseas un diseño personalizado? Escribinos.</p>
             
-            <form class="formulario-contacto" method="post"><!--lo puse en post por que si lo pongo en get se muestra en la url-->
+            <form id="formContacto" class="formulario-contacto" novalidate>
                 <div class="campo-grupo">
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+                    <span class="error-msj" id="errorNombre"></span>
                 </div>
                 <div class="campo-grupo">
                     <label for="telefono">Telefono:</label>
-                    <input type="tel" id="telefono" name="telefono" placeholder="Tu numero de telefono" minlength="10" maxlength="10" required  oninput="this.value = this.value.replace(/[^0-9+]/g, '')" >
+                    <input type="tel" id="telefono" name="telefono" placeholder="Tu numero de telefono" minlength="10" maxlength="13" required >
+                    <span class="error-msj" id="errorTelefono"></span>  
                 </div>
-                <!--ininput lo tuve que buscar en google por que no lo podia limitar-->
                 <div class="campo-grupo">
                     <label for="email">Correo Electrónico:</label>
                     <input type="email" id="email" name="email" required placeholder="tucorreo@correo.com">
+                    <span class="error-msj" id="errorEmail"></span>
                 </div>
                 
                 <div class="campo-grupo">
                     <label for="mensaje">Mensaje:</label>
                     <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribe tu mensaje..."></textarea>
+                    <span class="error-msj" id="errorMensaje"></span>
                 </div>
                 
                 <button type="submit" class="btn-enviar">Enviar Mensaje</button>
             </form>
+            <div id="resumenEnvio" class="resumen-interno"></div>
         </section>
     </main>
     <footer>
         <p>&copy; 2026 Joyería Sol Naciente. Todos los derechos reservados.</p>
     </footer>
+    <script src="js/jscontacto.js"></script>
 </body>
 </html>
