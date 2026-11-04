@@ -59,7 +59,7 @@ header nav ul li a.active {
 .carrusel {
     text-align: center;
     padding: 20px;
-    max-width: 850px;
+    max-width: 600px;
     margin: 0 auto 50px auto;
 }
 .carrusel h2 {
@@ -92,6 +92,23 @@ header nav ul li a.active {
 .btn-control:hover {
     background-color: goldenrod;
     color: #1a1a1a;
+}
+@media (max-width: 768px){
+    .carrusel{
+        padding: 10px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .carrusel-contenedor-interno{
+        gap: 8px;
+    }
+    .carrusel-contenedor-interno img{
+        height: 280px;
+    }
+    .btn-control{
+        padding: 8px 10px;
+        font-size: 1rem;
+    }
 }
 /*FOOTER*/
 footer {
