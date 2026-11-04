@@ -14,8 +14,8 @@ const errorMensaje = document.getElementById("errorMensaje");
 
 const contenedorResumen = document.getElementById("resumenEnvio");
 
-const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; //los regex los busque en google no se si hay una forma de que te tire todos los simbolos automaticamente pero cubren las necesidades de ambos
-const regexTelefono = /^[0-9\s\+\-\(\)]{7,13}$/;//lo limite a trece considerando que pongan +542664000000 podria poner otro numero si pero se supone es una joyeria nacional y creo que el limite de 13 es suficiente
+const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const regexTelefono = /^[0-9\s\+\-\(\)]{7,13}$/;
 
 if (!form){
     console.error("No se encontro el formulario ID #formContacto");

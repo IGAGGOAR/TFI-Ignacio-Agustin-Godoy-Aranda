@@ -1,4 +1,3 @@
-/*esto no lo sabia lo aprendi buscando es un reset basico para proyectos pequeños no se recomienda en proyectos mas grandes*/
 *{
     margin: 0;
     padding: 0;
@@ -71,7 +70,7 @@ header nav ul li a.active {
     height: 450px;
     object-fit: cover;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.642);/*en mi monitor no se nota tanto pero me gusta como queda*/
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.642);
 }
 .btn-control {
     background-color: #1a1a1a;
@@ -87,7 +86,7 @@ header nav ul li a.active {
     background-color: goldenrod;
     color: #1a1a1a;
 }
-/*LITERALMENTE FOOTER*/
+/*FOOTER*/
 footer {
     background-color: #1a1a1a;
     color:white;
@@ -96,7 +95,7 @@ footer {
     margin-top: 40px;
     font-size: 0.9rem;
 }
-/*ACOMODAR EWL LOGO*/
+/*ACOMODAR EL LOGO*/
 .logo {
     display: flex;
     align-items: center;
@@ -137,10 +136,9 @@ footer {
     padding: 20px;
     width: 320px;
     text-align: center;
-    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.642);/*lo mismo que el otro se nota poco pero me gusta como queda*/
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.642);
     transition: transform 0.3s;
 }
-/*me gusto mucho encontrar este efectito*/
 .tarjeta-producto:hover {
     transform: translateY(-5px);
 }
