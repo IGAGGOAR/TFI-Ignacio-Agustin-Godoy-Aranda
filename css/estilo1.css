@@ -53,6 +53,7 @@ header nav ul li a.active {
 .bienvenida p {
     color: grey;
     font-size: 1.1rem;
+    letter-spacing: 2px;
 }
 /*DISEÑO DEL CARRUSEL*/
 .carrusel {
@@ -126,6 +127,8 @@ footer {
 .catalogo p {
     color: grey;
     margin-bottom: 30px;
+    letter-spacing: 2px;
+
 }
 .contenedor-productos {
     display: flex;
